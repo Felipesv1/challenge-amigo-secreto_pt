@@ -2,7 +2,7 @@ let friends = [];
 let friendsList = document.getElementById("listaAmigos");
 let sort_friends = document.querySelector(".button-draw");
 let result = document.getElementById("resultado");
-function friendsAdd() {
+function addFriends() {
   let input_friends = document.getElementById("input_amigo");
   if (input_friends.value == "") {
     alert("Por favor, insira um nome.");
@@ -20,7 +20,7 @@ function friendsAdd() {
   }
 }
 
-function friendsSort() {
+function drawFriend() {
   let indice_sort = parseInt(Math.random() * friends.length);
   result.innerHTML = `<li>
     ${friends[indice_sort]}
