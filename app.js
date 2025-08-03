@@ -4,7 +4,6 @@ let sort_friends = document.querySelector(".button-draw");
 let result = document.getElementById("resultado");
 function friendsAdd() {
   let input_friends = document.getElementById("input_amigo");
-
   if (input_friends.value == "") {
     alert("Por favor, insira um nome.");
   } else {
